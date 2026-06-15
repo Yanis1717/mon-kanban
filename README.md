@@ -1,16 +1,36 @@
-# React + Vite
+# KanbanRT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web de gestion de tâches Kanban full-stack, développée dans le cadre du module R2.09.
 
-Currently, two official plugins are available:
+## 👥 Équipe
+* Yanis LAÏD
+* Herehauarii ISMAEL
+* Khadim DIAGNE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Liens du projet
+* **Application en production :** https://mon-kanban-beta.vercel.app
+* **Dépôt GitHub :** https://github.com/Yanis1717/mon-kanban.git
 
-## React Compiler
+## 🛠️ Stack Technique
+* **Frontend :** React, Vite, React Router
+* **Backend & Base de données :** Supabase (PostgreSQL, Auth, Storage)
+* **Déploiement & CI/CD :** Vercel
+* **Mails :** API Route Vercel (Serverless) + Resend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Instructions d'installation locale
 
-## Expanding the ESLint configuration
+Pour lancer ce projet sur votre machine, exécutez les commandes suivantes :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Cloner le dépôt : `git clone https://github.com/Yanis1717/mon-kanban.git`
+2. Entrer dans le répertoire du projet : `cd mon-kanban`
+3. Installer les dépendances : `npm install`
+4. Configurer l'environnement : Créer un fichier `.env.local` à la racine et y insérer les variables `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY` et `RESEND_API_KEY`.
+5. Lancer le serveur de développement : `npm run dev`
+
+## 📸 Aperçu de l'application
+
+### Page de Connexion
+![Page de connexion](./public/login.png)
+
+### Dashboard
+![Dashboard](./public/dashboard.png)
